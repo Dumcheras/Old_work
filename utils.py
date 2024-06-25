@@ -27,6 +27,7 @@ def reg_check(user_data, reg_pattern, users_list, data_to_check=None):
             user_data = input()
             continue
         print(f"{user_data} - данные приняты")
+        return user_data
 
 
 ''' проверяет уникальность введенных данных|checks the uniqueness of the entered data'''
