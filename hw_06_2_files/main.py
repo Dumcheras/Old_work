@@ -30,3 +30,14 @@ import os
 # del_dir = r'C:\Users\Константин\Desktop\Old_work_1\hw_06_2_files\data_path_2\new_dir'
 # os.rmdir(del_dir)
 # print("удалено")
+
+with open('wirte_text.txt', 'wt', encoding='utf-8') as vinny:
+    vinny.write('Если б мишки были пчелами,\n')
+    vinny.write('То они бы нипочем,\n')
+with open('wirte_text.txt', 'at', encoding='utf-8') as vinny_add:
+    vinny_add.write('Никогда и не подумали,\n')
+    vinny_add.write('Так высоко строить дом.\n')
+with open('wirte_text.txt', 'r', encoding='utf-8') as vinny_read:
+    for str_vinny in vinny_read:
+        print(str_vinny.strip())
+
