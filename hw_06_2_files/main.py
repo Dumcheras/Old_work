@@ -12,13 +12,21 @@ import os
 #     print(f"dirnames - {dirnames}")
 #     print(f"filenames - {filenames}")
 
-disk = 'c:\\'
-dir_1 = 'Users'
-dir_2 = 'Константин'
-dir_3 = 'Desktop'
-dir_4 = 'Old_work_1'
-dir_5 = 'hw_06_2_files'
-dir_6 = 'data_path_2'
-dir_7 = 'test_file_3.txt'
-path_to_test_file_3 = os.path.join(disk, dir_1, dir_2, dir_3, dir_4, dir_5, dir_6, dir_7)
-print(path_to_test_file_3)
+# disk = 'c:\\'
+# dir_1 = 'Users'
+# dir_2 = 'Константин'
+# dir_3 = 'Desktop'
+# dir_4 = 'Old_work_1'
+# dir_5 = 'hw_06_2_files'
+# dir_6 = 'data_path_2'
+# dir_7 = 'test_file_3.txt'
+# path_to_test_file_3 = os.path.join(disk, dir_1, dir_2, dir_3, dir_4, dir_5, dir_6, dir_7)
+# print(path_to_test_file_3)
+
+# new_dir = r'C:\Users\Константин\Desktop\Old_work_1\hw_06_2_files\data_path_2\new_dir'
+# os.mkdir(new_dir)
+# print("создано")
+
+# del_dir = r'C:\Users\Константин\Desktop\Old_work_1\hw_06_2_files\data_path_2\new_dir'
+# os.rmdir(del_dir)
+# print("удалено")
