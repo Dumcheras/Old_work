@@ -58,3 +58,11 @@ o   utputs them according to correctness, assigns the level of knowledge'''
         if value is False:
             print(key)
     return user_level[str(counter)]
+
+
+def write_answers(file_name, answers):
+    '''функция записывает результаты теста в файл
+    the function writes the test results to a file'''
+    answers_json = json.dumps(answers, ensure_ascii=False, indent=4)
+    with open(file_name,'w',encoding='utf-8') as file:
+        file.write(f"{answers_json}")
