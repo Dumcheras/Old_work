@@ -40,3 +40,21 @@ def user_words_answers(words):
             print(f'Неверно, {word.title()} это {translate.title()}.')
             answers[word] = False
     return answers
+
+
+def get_result(answers, user_level):
+    '''функция принимает список с ответсами пользователя,
+    выводит их в соответствии с правильностью, присваивает уровень знаний
+    the function takes a list with the user's answers,
+o   utputs them according to correctness, assigns the level of knowledge'''
+    counter = 0
+    print('\nПравильно отвеченные слова:')
+    for key, value in answers.items():
+        if value is True:
+            print(key)
+            counter += 1
+    print('\nНеправильно отвеченные слова:')
+    for key, value in answers.items():
+        if value is False:
+            print(key)
+    return user_level[str(counter)]
