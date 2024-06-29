@@ -23,3 +23,20 @@ def get_user_level(user_select, questions_list):
     else:
         words = questions_list[0]
     return words
+
+
+def user_words(words):
+    '''функция задает вопрос из словаря, принммает ответы пользователя, сравнивает их с ответами из словаря,
+     возвращает список ответов в булевом формате\\the function asks a question from the dictionary,
+     accepts the user's answers, and compares them with the answers from the dictionary,
+     returns a list of responses in Boolean format'''
+    answers = {}
+    for word, translate in words.items():
+        answer = input(f'\n{word}, {len(translate)} букв, начинается на {translate[0].upper()}...\n').lower()
+        if answer == translate:
+            print(f'Верно, {word.title()} это {translate.title()}.')
+            answers[word] = True
+        else:
+            print(f'Неверно, {word.title()} это {translate.title()}.')
+            answers[word] = False
+        return answers
