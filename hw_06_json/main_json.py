@@ -1,4 +1,4 @@
-from hw_06_json.utils.utils import get_data, get_user_level, user_words_answers
+from hw_06_json.utils.utils import get_data, get_user_level, user_words_answers, get_result
 
 questions, levels = get_data(r'questions/questions.json')
 questions_list = questions['questions']
@@ -9,4 +9,6 @@ user_name = input('Введите имя студента:\n')
 user_choice = input('Введите уровень сложности:\nлегкий|средний|сложный\n')
 user_words = get_user_level(user_choice, questions_list)
 user_result = user_words_answers(user_words)
-print(user_result)
+# print(user_result)
+user_stage = get_result(user_result, user_level)
+print(f'\nВаш ранг {user_stage}')
