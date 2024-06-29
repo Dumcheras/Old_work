@@ -25,7 +25,7 @@ def get_user_level(user_select, questions_list):
     return words
 
 
-def user_words(words):
+def user_words_answers(words):
     '''функция задает вопрос из словаря, принммает ответы пользователя, сравнивает их с ответами из словаря,
      возвращает список ответов в булевом формате\\the function asks a question from the dictionary,
      accepts the user's answers, and compares them with the answers from the dictionary,
@@ -39,4 +39,4 @@ def user_words(words):
         else:
             print(f'Неверно, {word.title()} это {translate.title()}.')
             answers[word] = False
-        return answers
+    return answers
